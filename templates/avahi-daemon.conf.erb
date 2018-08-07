@@ -49,6 +49,9 @@ enable-wide-area=<%= @enable_wide_area ? 'yes' : 'no' %>
 [reflector]
 enable-reflector=<%= @enable_reflector ? 'yes' : 'no' %>
 #reflect-ipv=no
+<%- unless @filter_interfaces.empty? %>
+allow-interfaces=<%= @filter_interfaces.join(', ') %>
+<%- end -%>
 
 [rlimits]
 #rlimit-as=

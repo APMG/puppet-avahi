@@ -7,6 +7,7 @@ class avahi::config (
   $avahi_domainname   = $::avahi::avahi_domainname,
   $allow_interfaces   = $::avahi::allow_interfaces,
   $deny_interfaces    = $::avahi::deny_interfaces,
+  $filter_interfaces  = $::avahi::filter_interfaces,
   $enable_reflector   = $::avahi::enable_reflector,
   $enable_p2p         = $::avahi::enable_p2p,
   $enable_wide_area   = $::avahi::enable_wide_area,
