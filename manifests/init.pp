@@ -14,6 +14,7 @@ class avahi (
   $avahi_domainname   = 'local',
   $allow_interfaces   = [],
   $deny_interfaces    = [],
+  $reflect_filters    = [],
   $enable_reflector   = false,
   $enable_p2p         = false,
   $enable_wide_area   = true,
@@ -25,6 +26,7 @@ class avahi (
   validate_string($avahi_domainname)
   validate_array($allow_interfaces)
   validate_array($deny_interfaces)
+  validate_array($reflect_filters)
   validate_bool($enable_reflector)
   validate_bool($enable_p2p)
   validate_bool($enable_wide_area)
